@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { Header } from '../components';
 
 export default function Home() {
 	return (
@@ -11,23 +12,21 @@ export default function Home() {
 			</Head>
 
 			<main>
-				<div
-					className="relative flex flex-col lg:flex-row items-center 
-          justify-center lg:justify-around h-screen overflow-hidden"
-				>
+				<div className="relative flex flex-col items-center justify-center h-screen overflow-hidden lg:flex-row lg:justify-around">
+					<Header />
 					<div className="text-center">
 						<h1>Hola! Soy Julian Riedinger</h1>
 						<h2>Frontend Developer</h2>
-						<a href="#" download="/cv-final.pdf" className="btn-cv">
+						<a href="/cv-final.pdf" download className="btn-cv">
 							Descargar CV
 						</a>
 					</div>
-					<div className="relative w-60 h-60 mt-5 md:h-80 md:w-80">
+					<div className="relative mt-5 w-60 h-60 md:h-80 md:w-80">
 						<Image
 							src="/yo.jpeg"
 							alt="Julian Riedinger"
 							fill
-							className="rounded-full aspect-square object-cover"
+							className="object-cover rounded-full aspect-square"
 						/>
 					</div>
 					<video
@@ -35,8 +34,7 @@ export default function Home() {
 						autoPlay
 						loop
 						muted
-						className="absolute -z-10 w-auto 
-              min-w-full min-h-full max-w-none"
+						className="absolute w-auto min-w-full min-h-full -z-10 max-w-none"
 					></video>
 				</div>
 			</main>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +8,7 @@
 
 @layer base {
   body{
+    font-family: 'Inconsolata', monospace;
     @apply tracking-wide
   }
 
@@ -21,7 +25,7 @@
   }
 
   li{
-    @apply cursor-pointer
+    @apply cursor-pointer font-medium hover:text-[#E63946] hover:border-b hover:border-[#E63946] transition-all ease-in-out
   }
 
 }
