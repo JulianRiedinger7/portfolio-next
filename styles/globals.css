@@ -9,7 +9,21 @@
 @layer base {
   body{
     font-family: 'Inconsolata', monospace;
-    @apply tracking-wide
+    @apply tracking-wide 
+  }
+
+  ::-webkit-scrollbar{
+    @apply w-6 h-4
+  }
+
+  ::-webkit-scrollbar-track {
+    
+    @apply bg-[#1D3557] 
+  }
+
+  ::-webkit-scrollbar-thumb{
+    border: 0.25em solid #1D3557;
+    @apply bg-[#E63946] rounded-full
   }
 
   h1,h2,h3,h4,h5,h6{
