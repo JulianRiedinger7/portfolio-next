@@ -31,7 +31,7 @@
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl text-[#E63946]
+    @apply text-[33px] sm:text-5xl md:text-6xl text-[#E63946]
   }
 
   h2{
@@ -55,5 +55,21 @@
   
   .highlight{
     @apply text-violet-600
+  }
+
+  .typing {
+    animation: typing 2.5s steps(26), blink .5s infinite step-end alternate;
+    width: 27ch;
+    @apply block whitespace-nowrap border-r-4 overflow-hidden
+  }
+}
+
+@keyframes typing {
+  from {width: 0}
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
 }

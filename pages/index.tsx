@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { About, Header } from '../components';
+import { About, Header, Skills } from '../components';
 
 export default function Home() {
 	return (
@@ -15,7 +15,7 @@ export default function Home() {
 				<div className="relative flex flex-col items-center justify-center h-screen overflow-hidden lg:flex-row lg:justify-around">
 					<Header />
 					<div className="text-center">
-						<h1>Hola! Soy Julian Riedinger</h1>
+						<h1 className='sm:w-full sm:typing'>Hola! Soy Julian Riedinger</h1>
 						<h2>Frontend Developer</h2>
 						<a href="/cv-Julian-Riedinger.pdf" download className="btn-cv">
 							Descargar CV
@@ -41,7 +41,7 @@ export default function Home() {
 
 		
 				<About />
-				
+				<Skills />
 			</main>
 		</>
 	);
