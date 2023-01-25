@@ -17,7 +17,7 @@ export default function Home() {
 					<div className="text-center">
 						<h1>Hola! Soy Julian Riedinger</h1>
 						<h2>Frontend Developer</h2>
-						<a href="/cv-final.pdf" download className="btn-cv">
+						<a href="/cv-Julian-Riedinger.pdf" download className="btn-cv">
 							Descargar CV
 						</a>
 					</div>
