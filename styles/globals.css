@@ -52,4 +52,8 @@
   .btn-cv{
     @apply bg-transparent text-white uppercase font-medium border-2 border-l-[#E63946] border-t-[#E63946]  border-r-[#1D3557] border-b-[#1D3557] p-4 rounded-lg inline-block mt-5 shadow-md hover:bg-[#1D3557] hover:border-transparent hover:scale-105 transition-all ease-in-out
   }
+  
+  .highlight{
+    @apply text-violet-600
+  }
 }
